@@ -1,0 +1,33 @@
+<div class="container">
+    <h1>Edita un Estudiante</h1>
+    <p class="text-justify">Editar un estudiante nunca ha sido más sencillo. Puedes editar a un estudiante volviendo a llenar los campos y presionando editar!</p>
+    <div class="flex-center">
+        <div class="card">
+            <div class="card-header">
+            Formulario
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Estudiante Antiguo</h5>
+                <form #updateStudentsForm="ngForm">
+                    <div class="form-group">
+                        <input class="form-control" type="text" id="firstName" placeholder="Primer Nombre" required 
+                        #firstName="ngModel" name="firstName" [(ngModel)]="student.firstName">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" id="lastName" placeholder="Apellido" required
+                        #lastName="ngModel" name="lastName" [(ngModel)]="student.lastName">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="number" id="document" placeholder="Documento" required
+                        #document="ngModel" name="document" [(ngModel)]="student.document">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="number" id="age" placeholder="Edad" required
+                        #age="ngModel" name="age" [(ngModel)]="student.age">
+                    </div>
+                    <button (click)="editStudent(student)" class="btn btn-primary">Editar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

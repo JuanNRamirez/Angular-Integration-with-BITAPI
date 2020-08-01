@@ -1,0 +1,29 @@
+.footer .container {
+    margin-top: 1.5rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.footer .text-center {
+    margin-top: 1.5rem;
+}
+
+.footer .container .row .col-sm .gen {
+    color: white;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        margin-top: 8rem;
+        width: 100%;
+    }
+    .footer .container .row .col-sm {
+        color: white;
+        padding-top: 1.5rem;
+    }
+}

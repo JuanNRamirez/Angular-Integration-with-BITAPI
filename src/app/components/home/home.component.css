@@ -1,0 +1,47 @@
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.customText {
+    font-size: 1.1rem;
+}
+
+.card-group {
+    margin-left: 3rem;
+    margin-top: 3rem;
+    margin-right: 3rem;
+}
+
+.card-group .card {
+    margin: 0 auto; 
+    float: none; 
+    border-color: black;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.card-group .card .card-body .genIcon {
+    margin-bottom: 2rem;
+}
+
+.card-group .card .card-body .card-title {
+    margin-bottom: 1rem;
+}
+
+.card-group .card .card-body .card-text {
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+
+    .cardContainer {
+        text-align: center;
+    }
+    .card-group {
+        margin: 0;
+        text-align: center;
+    }
+}
